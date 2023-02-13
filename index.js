@@ -9,10 +9,15 @@ let leagueCountry = document.querySelector("#league-country");
 let leagueStandings = document.querySelector("#league-standings");
 let li = document.createElement("li");
 
+
+
+let leagueLogo = document.querySelector("#league-logo")
+
 fetch("http://localhost:3000/leagues")
-.then(response => response.json())
-.then(leagueData => {
-    // console.log(leagueData);
+  .then((response) => response.json())
+  .then((leagueData) => {
+    console.log(leagueData);
+
 
     //Our wishlist for the code
     addLeagues(leagueData)
@@ -33,6 +38,9 @@ function addLeagues(leagueData) {
 
         })
 //adding a mouseover event to change from home to away colors for the logo
+        leagueLogo.addEventListener("mouseover", () => {
+          setLeague(league);
+        });
     });
 }
 function setLeague(nextLeague) {
@@ -63,3 +71,4 @@ function getLeagueStandings(nextLeague) {
     // li.addEventListener("click", function () {
     //   console.log("clicked")
     // });
+
