@@ -15,7 +15,7 @@ fetch("http://localhost:3000/leagues")
 
     //Our wishlist for the code
     addLeagues(leagueData)
-    setLeague(leagueData)
+    setLeague(leagueData[0])
 })
 function addLeagues(leagueData) {
     leagueData.forEach(league => {
@@ -24,8 +24,11 @@ function addLeagues(leagueData) {
         
         leagueList.appendChild(leagueItem);
 
-        leagueList.addEventListener("click", () => {
+        leagueItem.addEventListener("click", () => {
             setLeague(league)
+            
+
+
         })
 //adding a mouseover event to change from home to away colors for the logo
     });
@@ -36,7 +39,7 @@ function setLeague(nextLeague) {
  leagueName.textContent = nextLeague.name;
  leagueCountry.textContent = nextLeague.country;
  leagueImage.src = nextLeague.leagueLogo;
-leagueStandings.textContent = nextLeague.standings;
+leagueStandings.textContent = nextLeague.teamStandings;
  
 }
 function getLeagueStandings() {
