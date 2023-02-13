@@ -7,15 +7,17 @@ let leagueImage = document.querySelector("#league-logo");
 let leagueName = document.querySelector("#league-name");
 let leagueCountry = document.querySelector("#league-country");
 let leagueStandings = document.querySelector("#league-standings");
+let li = document.createElement("li");
 
 fetch("http://localhost:3000/leagues")
 .then(response => response.json())
 .then(leagueData => {
-    console.log(leagueData);
+    // console.log(leagueData);
 
     //Our wishlist for the code
     addLeagues(leagueData)
     setLeague(leagueData[0])
+    getLeagueStandings(currentLeague)
 })
 function addLeagues(leagueData) {
     leagueData.forEach(league => {
@@ -42,6 +44,22 @@ function setLeague(nextLeague) {
 leagueStandings.textContent = nextLeague.teamStandings;
  
 }
-function getLeagueStandings() {
+function getLeagueStandings(nextLeague) {
+    currentLeague = nextLeague;
+    
+    let table = document.createElement("table")
+    table.classList.add("table")
+
+    let standings = document.querySelector("h5")
+    standings;
+    let tableClass = document.querySelector(".table")
+    tableClass;
+    let standingsTable = document.createElement("TABLE")
+    standingsTable;
+    leagues.teamStandings.forEach(teamStandings =>
+        console.log(teamStandings));
 
 }
+    // li.addEventListener("click", function () {
+    //   console.log("clicked")
+    // });
