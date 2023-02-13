@@ -103,3 +103,21 @@ form {
     display:flex;
     height: 30px;
 }
+h1 {
+    color: black;
+    font-family: monospace;
+    text-align: center;
+}
+body {
+    text-align: left;
+    font-family: monospace;
+    font-weight: normal;
+    background-color: bisque;
+    /* background-image: url('https://cdnuploads.aa.com.tr/uploads/Contents/2018/11/01/thumbs_b_c_b5d8d7076b8ba4773b8e3eb87428a801.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    image-rendering: -webkit-optimize-contrast;
+    background-size: cover;
+     */
+   
+}
