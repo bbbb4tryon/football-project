@@ -2,10 +2,11 @@
 
 //declare global varibales
 let currentLeague;
-let leagueList = document.querySelector("#leagues");
+let leagueList = document.querySelector("#individual-leagues");
 let leagueImage = document.querySelector("#league-logo");
 let leagueName = document.querySelector("#league-name");
 let leagueCountry = document.querySelector("#league-country");
+let leagueStandings = document.querySelector("#league-standings");
 
 fetch("http://localhost:3000/leagues")
 .then(response => response.json())
@@ -14,12 +15,13 @@ fetch("http://localhost:3000/leagues")
 
     //Our wishlist for the code
     addLeagues(leagueData)
-    // setLeague(leagueData)
+    setLeague(leagueData)
 })
 function addLeagues(leagueData) {
     leagueData.forEach(league => {
         let leagueItem = document.createElement("li");
         leagueItem.textContent = league.name;
+        
         leagueList.appendChild(leagueItem);
 
         leagueList.addEventListener("click", () => {
@@ -30,7 +32,13 @@ function addLeagues(leagueData) {
 }
 function setLeague(nextLeague) {
  currentLeague = nextLeague;
-console.log(nextLeague);
- leagueList.textContent = nextLeague.name
+
+ leagueName.textContent = nextLeague.name;
+ leagueCountry.textContent = nextLeague.country;
+ leagueImage.src = nextLeague.leagueLogo;
+leagueStandings.textContent = nextLeague.standings;
  
+}
+function getLeagueStandings() {
+
 }

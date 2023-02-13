@@ -16,3 +16,7 @@ body {
      */
    
 }
+#leagues li:hover {
+    color: red;
+    cursor: pointer;
+}
