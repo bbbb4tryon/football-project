@@ -7,6 +7,7 @@ let leagueImage = document.querySelector("#league-logo");
 let leagueName = document.querySelector("#league-name");
 let leagueCountry = document.querySelector("#league-country");
 let leagueStandings = document.querySelector("#league-standings");
+let leagueLogo = document.querySelector("#league-logo")
 
 fetch("http://localhost:3000/leagues")
   .then((response) => response.json())
@@ -28,6 +29,9 @@ function addLeagues(leagueData) {
             setLeague(league)
         })
 //adding a mouseover event to change from home to away colors for the logo
+        leagueLogo.addEventListener("mouseover", () => {
+          setLeague(league);
+        });
     });
 }
 function setLeague(nextLeague) {
@@ -42,3 +46,4 @@ leagueStandings.textContent = nextLeague.standings;
 function getLeagueStandings() {
 
 }
+
