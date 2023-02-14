@@ -6,9 +6,26 @@
         "name": "The Premier League",
         "leagueLogo":"https://a.espncdn.com/i/leaguelogos/soccer/500/23.png",
         "promoVideo": "https://www.youtube.com/watch?v=rMZVhL8obAkautoplay=1",
-        "teamStandings": [
-                "1st Arsenal, 2nd Manchester City, 3rd, Manchester United, 4th Newcastle, 5th Tottenham, 6th Brighton, 7th Fullham, 8th Brentford, 9th Liverpool, 10th Chelsea, 11th Aston Villa, 12th Crystal Palace, 13th Leicester, 14th Nottingham Forest, 15th Wolves, 16th West Ham, 17th Leeds United, 18th Everton, 19th Bournemouth, 20th Southampton"
-        ]
+        "team1": "1st Arsenal",
+        "team2": "2nd Manchester City",
+        "team3": "3rd Manchester United",
+        "team4": "4th Newcastle",
+        "team5": "5th Tottenham",
+        "team6": "6th Brighton",
+        "team7": "7th Fullham",
+        "team8": "8th Brentford",
+        "team9": "9th Liverpool",
+        "team10": "10th Chelsea",
+        "team11": "11th Aston Villa",
+        "team12": "12th Crystal Palace",
+        "team13": "13th Leicester",
+        "team14": "14th Nottingham Forest",
+        "team15": "15th Wolves",
+        "team16": "16th West Ham",
+        "team17": "17th Leeds United",
+        "team18": "18th Everton",
+        "team19": "19th Bournemouth",
+        "team20": "20th Southampton"
         },
         {
             "id": "spain.2", 

@@ -1,11 +1,21 @@
 //code for use to get JS to show up on website
 //declare global varibales
 let currentLeague;
-let leagueList = document.querySelector("#individual-leagues");
-let leagueImage = document.querySelector("#league-logo");
-let leagueName = document.querySelector("#league-name");
-let leagueCountry = document.querySelector("#league-country");
-let leagueStandings = document.querySelector("#league-name");
+const leagueList = document.querySelector("#individual-leagues");
+const leagueImage = document.querySelector("#league-logo");
+const leagueName = document.querySelector("#league-name");
+const leagueCountry = document.querySelector("#league-country");
+const leagueStandings = document.querySelector("#league-standings");
+const firstPlace = document.querySelector("#team-1");
+const secondPlace = document.querySelector("#team-2");
+const thirdPlace = document.querySelector("#team-3");
+const fourthPlace = document.querySelector("#team-4");
+const fifthPlace = document.querySelector("#team-5");
+const sixthPlace = document.querySelector("#team-6");
+const seventhPlace = document.querySelector("#team-7");
+const eighthPlace = document.querySelector("#team-8");
+const ninthPlace = document.querySelector("#team-9");
+const tenthPlace = document.querySelector("#team-10");
 // let leaguePromo = document.querySelector("#league-
 
 
@@ -16,7 +26,7 @@ fetch("http://localhost:3000/leagues")
     //Our wishlist for the code
     addLeagues(leagueData)
     setLeague(leagueData)
-    displayStandings()
+    displayStandings(leagueData)
     addComment()
     mouseOver()
     mouseOut()
@@ -27,7 +37,7 @@ fetch("http://localhost:3000/leagues")
 })
 function addLeagues(leagueData) {
     leagueData.forEach(league => {
-        let leagueItem = document.createElement("ol");
+        let leagueItem = document.createElement("span");
         leagueItem.textContent = league.name;
         leagueList.appendChild(leagueItem);
         leagueItem.addEventListener("click", () => {
@@ -37,17 +47,20 @@ function addLeagues(leagueData) {
 //adding a mouseover event to change from home to away colors for the logo
 
 }
-function displayStandings(leagueData) {
-    leagueStandings.forEach(team => {
-        let newStandings = document.createElement("ol");
-        newStandings.textContent = team.teamStandings;
-        leagueStandings.appendChild(newStandings);
-        // newStandings.addEventListener("click", () => {
-        //     setLeague(team)
-        // })
+// function displayStandings(leagueData) {
+//     leagueData.forEach(team => {
+//         for(let i = 0; i < 20; i++) {
+//             let newStandings = document.createElement("li");
+//             newStandings.textContent = team.team[i]
+//             leagueStandings.appendChild(newStandings);
+//         }
+        
+//         // newStandings.addEventListener("click", () => {
+//         //     setLeague(team)
+//         // })
     
-    })
-}
+//     })
+// }
 
 
 function setLeague(nextLeague) {
@@ -57,6 +70,16 @@ function setLeague(nextLeague) {
  leagueCountry.textContent = nextLeague.country;
  leagueImage.src = nextLeague.leagueLogo;
  leagueStandings.textContent = nextLeague.teamStandings;
+ firstPlace.textContent = nextLeague.team1;
+ secondPlace.textContent = nextLeague.team2;
+ thirdPlace.textContent = nextLeague.team3;
+ fourthPlace.textContent = nextLeague.team4;
+ fifthPlace.textContent = nextLeague.team5;
+ sixthPlace.textContent = nextLeague.team6;
+ seventhPlace.textContent = nextLeague.team7;
+ eighthPlace.textContent = nextLeague.team8;
+ ninthPlace.textContent = nextLeague.team9;
+ tenthPlace.textContent = nextLeague.team10;
 
 }
 function addComment() {
