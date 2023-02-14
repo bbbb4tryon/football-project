@@ -11,35 +11,64 @@
 </head>
 <body>
     <header>
-        <h1>Football Leagues Around The World</h1>
+        <h1 id = 'title'>Football Leagues Around The World</h1>
         <!-- add an image here for the page -->
+        <script>
+            document.getElementById("title").onmouseover = function() {mouseOver()};
+            document.getElementById("title").onmouseout = function() {mouseOut()};
+            
+            function mouseOut() {
+              document.getElementById("title").style.fontFamily = "monospace";
+            }
+            
+            function mouseOver() {
+              document.getElementById("title").style.fontFamily = "comic Sans MS";
+            }
+            </script>
     </header>
     <div id ="container">
         <section id = "leagues">
             <h2>Pick A League!</h2>
             <div id ="individual-leagues">
                 <!-- add the leagues here -->
+                
             </div>
         </section>
         <section id = "league-information">
             <img id = "league-logo" src=""/>
             <div id = "league-details">
                 <h4 id ="league-name"> </h4>
-                <h5 id ="league-standings"></h5> 
                 <h4 id ="league-country"></h4>
+                <h5 id ="league-standings"></h5> 
 
             </div>
-           <h3>Add A Comment</h3>
-           <form id="create-task-form" action="#" method="post">
-            <label for="new-task-description">Comment:</label>
-            <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
-            <input type="submit" value="Add to the Community Board">
-          </form>
+            <!-- <audio controls>
+                <source src="tomp3.cc - Glory Glory Man Utd.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio> -->
+           <!-- <h3>Add A Comment</h3> -->
+           <h2>Community Board</h2>
+           <form id="comment-form" class="comment-form">
+
+            <ul id="comment_new">
+                <li> I love the french league!</li>
+                <li>Soccer is super boring</li>
+                <li>hey</li>
+            </ul>
+           <input
+             class="comment-input"
+             type="text"
+             name="comment"
+             id="comment"
+             placeholder="Add a comment..."
+             
+           />
+           <button class="comment-button" type="submit">Send 'er</button>
+         </form>
 
           <div id="list">
-            <h2>Community Board</h2>
-            <ul id="comment">
-            </ul>
+            <!-- <h2>Community Board</h2> -->
+
           </div>
 
         </section>
