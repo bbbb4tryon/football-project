@@ -11,8 +11,9 @@
 </head>
 <body>
     <header>
-        <h1 id = 'title'>Football Leagues Around The World</h1>
+        <h1 id = 'title'>Football Leagues Around The World <iframe src="https://giphy.com/embed/bsbWrS0aqbS0w" text-align ="right" width="100" height="100" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a></a></p></h1>
         <!-- add an image here for the page -->
+        
         <script>
             document.getElementById("title").onmouseover = function() {mouseOver()};
             document.getElementById("title").onmouseout = function() {mouseOut()};
@@ -22,7 +23,8 @@
             }
             
             function mouseOver() {
-              document.getElementById("title").style.fontFamily = "comic Sans MS";
+              document.getElementById("title").style.fontFamily = "monospace";
+              
             }
             </script>
     </header>
@@ -39,7 +41,15 @@
             <div id = "league-details">
                 <h4 id ="league-name"> </h4>
                 <h4 id ="league-country"></h4>
-                <h5 id ="league-standings"></h5> 
+                <h5 id ="league-standings">
+                <ul id = "standings-table">
+                    <li>
+                        <span id = "league-name"> </span>
+                    </li>
+
+                </ul>
+
+                </h5>
 
             </div>
             <!-- <audio controls>
@@ -70,6 +80,25 @@
             <!-- <h2>Community Board</h2> -->
 
           </div>
+          <button class="accordion">Fun Fact #1</button>
+<div class="panel">
+  <p>Queen Elizabeth II would dress in disguise and participate 
+    frequently in soccer matches near Buckingham Palace in her 
+    teenage years in the late 1930s and early ‘40s.
+</p>
+</div>
+
+<button class="accordion">Fun Fact #2</button>
+<div class="panel">
+  <p>Up until 1991, soccer was illegal in Mississippi.</p>
+</div>
+
+<button class="accordion">Fun Fact #3</button>
+<div class="panel">
+  <p>The very first American professional soccer league called the 
+    USSA played from 1919 to 1921. 
+     For every goal scored the players earned 35-cents.</p>
+</div>
 
         </section>
 

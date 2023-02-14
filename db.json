@@ -7,28 +7,7 @@
         "leagueLogo":"https://a.espncdn.com/i/leaguelogos/soccer/500/23.png",
         "promoVideo": "https://www.youtube.com/watch?v=rMZVhL8obAkautoplay=1",
         "teamStandings": [
-            {
-            "1st": "Arsenal",
-            "2nd": "Manchester City",
-            "3rd": "Manchester United",
-            "4th": "Newcastle United",
-            "5th": "Tottenham Hotspur",
-            "6th": "Brighton and Hove Albion",
-            "7th": "Brentford",
-            "8th": "Chelsea",
-            "9th": "Liverpool",
-            "10th": "Fullham",
-            "11th": "Aston Villa",
-            "12th": "Crystal Palace",
-            "13th": "Nottingham Forest",
-            "14th": "Leicester City",
-            "15th": "Wolves",
-            "16th": "Leeds United",
-            "17th": "West Ham",
-            "18th": "Everton",
-            "19th": "Bournemouth",
-            "20th": "Brighton and Hove Albion"
-            }
+                "1st Arsenal, 2nd Manchester City, 3rd, Manchester United, 4th Newcastle, 5th Tottenham, 6th Brighton, 7th Fullham, 8th Brentford, 9th Liverpool, 10th Chelsea, 11th Aston Villa, 12th Crystal Palace, 13th Leicester, 14th Nottingham Forest, 15th Wolves, 16th West Ham, 17th Leeds United, 18th Everton, 19th Bournemouth, 20th Southampton"
         ]
         },
         {
@@ -37,29 +16,8 @@
            "name": "La Liga",
            "leagueLogo":"https://a.espncdn.com/i/leaguelogos/soccer/500/15.png",
            "teamStandings": [
-               {
-               "1st": "Barcelona",
-               "2nd": "Real Madrid",
-               "3rd": "Real Sociedad",
-               "4th": "Atletico Madrid",
-               "5th": "Rayo Vallecano",
-               "6th": "Villareal",
-               "7th": "Real Betis",
-               "8th": "Athletic Club",
-               "9th": "Osasuna",
-               "10th": "Mallorca",
-               "11th": "Girona",
-               "12th": "Celta Vigo",
-               "13th": "Valladolid",
-               "14th": "Almeria",
-               "15th": "Espanyol",
-               "16th": "Sevilla",
-               "17th": "Valencia",
-               "18th": "Cadiz",
-               "19th": "Getafe",
-               "20th": "Elche"
-               }
-           ]
-           }
+            "1st: Barcelona, 2nd: Real Madrid, 3rd: Real Sociedad, 4th: Atletico Madrid, 5th: Rayo Vallecano, 6th: Villareal, 7th: Real Betis, 8th Athletic Club, 9th: Osasuna, 10th: Mallorca, 11th: Girona, 12th: Celta Vigo, 13th: Valladolid, 14th: Almeria, 15th: Espanyol, 16th: Sevilla, 17th: Valencia, 18th: Cadiz, 19th: Getafe, 20th: Elche"
+             ]
+    }
     ]
 }
