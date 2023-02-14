@@ -16,12 +16,9 @@ body {
      */
    
 }
-#leagues li:hover {
+
+#league-logo,
+li:hover {
     color: red;
     cursor: pointer;
-}
-#league-logo {
-    width: 200px;
-    height: 200px;
-   align-items: center;
 }
