@@ -1,21 +1,22 @@
 //code for use to get JS to show up on website
 //declare global varibales
 let currentLeague;
-const leagueList = document.querySelector("#individual-leagues");
-const leagueImage = document.querySelector("#league-logo");
-const leagueName = document.querySelector("#league-name");
-const leagueCountry = document.querySelector("#league-country");
-const leagueStandings = document.querySelector("#league-standings");
-const firstPlace = document.querySelector("#team-1");
-const secondPlace = document.querySelector("#team-2");
-const thirdPlace = document.querySelector("#team-3");
-const fourthPlace = document.querySelector("#team-4");
-const fifthPlace = document.querySelector("#team-5");
-const sixthPlace = document.querySelector("#team-6");
-const seventhPlace = document.querySelector("#team-7");
-const eighthPlace = document.querySelector("#team-8");
-const ninthPlace = document.querySelector("#team-9");
-const tenthPlace = document.querySelector("#team-10");
+let leagueList = document.querySelector("#individual-leagues");
+let leagueImage = document.querySelector("#league-logo");
+let leagueName = document.querySelector("#league-name");
+let leagueCountry = document.querySelector("#league-country");
+let leagueStandings = document.querySelector("#league-standings");
+let teamLeagueList = document.querySelector("#individual-teams");
+let firstPlace = document.querySelector("#team-1");
+let secondPlace = document.querySelector("#team-2");
+let thirdPlace = document.querySelector("#team-3");
+let fourthPlace = document.querySelector("#team-4");
+let fifthPlace = document.querySelector("#team-5");
+let sixthPlace = document.querySelector("#team-6");
+let seventhPlace = document.querySelector("#team-7");
+let eighthPlace = document.querySelector("#team-8");
+let ninthPlace = document.querySelector("#team-9");
+let tenthPlace = document.querySelector("#team-10");
 // let leaguePromo = document.querySelector("#league-
 
 
@@ -39,7 +40,7 @@ function addLeagues(leagueData) {
     leagueData.forEach(league => {
         let leagueItem = document.createElement("li");
         leagueItem.textContent = league.name;
-        leagueList.appendChild(leagueItem);
+        teamLeagueList.append(leagueItem);
         leagueItem.addEventListener("click", () => {
             
             for(let i = 1; i <= 20; i++) {
@@ -47,7 +48,7 @@ function addLeagues(leagueData) {
                 let team = "team" + i
                 console.log(league[team])   
                 teamItems.textContent = league[team];
-                leagueList.appendChild(teamItems);
+                leagueList.append(teamItems);
                 
             }
             setLeague(league)
@@ -75,16 +76,7 @@ function setLeague(nextLeague) {
  leagueCountry.textContent = nextLeague.country;
  leagueImage.src = nextLeague.leagueLogo;
  leagueStandings.textContent = nextLeague.teamStandings;
- firstPlace.textContent = nextLeague.team1;
- secondPlace.textContent = nextLeague.team2;
- thirdPlace.textContent = nextLeague.team3;
- fourthPlace.textContent = nextLeague.team4;
- fifthPlace.textContent = nextLeague.team5;
- sixthPlace.textContent = nextLeague.team6;
- seventhPlace.textContent = nextLeague.team7;
- eighthPlace.textContent = nextLeague.team8;
- ninthPlace.textContent = nextLeague.team9;
- tenthPlace.textContent = nextLeague.team10;
+
 
 }
 function addComment() {
