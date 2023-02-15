@@ -13,36 +13,170 @@
 </head>
 <body>
     <header>
-        <h1>Football Leagues Around The World</h1>
+        <h1 id = 'title'>Football Leagues Around The World <iframe src="https://giphy.com/embed/bsbWrS0aqbS0w" text-align ="right" width="100" height="100" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a></a></p></h1>
         <!-- add an image here for the page -->
+        
+        <script>
+            document.getElementById("title").onmouseover = function() {mouseOver()};
+            document.getElementById("title").onmouseout = function() {mouseOut()};
+            
+            function mouseOut() {
+              document.getElementById("title").style.backgroundColor = "bisque";
+            }
+            
+            function mouseOver() {
+              document.getElementById("title").style.backgroundColor = "red";
+              
+            }
+            </script>
     </header>
     <div id ="container">
         <section id = "leagues">
             <h2>Pick A League!</h2>
             <div id ="individual-leagues">
                 <!-- add the leagues here -->
+                <div id = "individual-teams"></div>
+                <!-- team lists standings will populate here -->
             </div>
         </section>
         <section id = "league-information">
-            <img id = "league-logo" src="https://cdn.shopify.com/s/files/1/0249/5892/6941/products/Nike-Swoosh-Logo-Iron-On-Red_300x300.jpg?v=1585837119"/>
+
+            <img id = "league-logo" src=""/>
+            
+
             <div id = "league-details">
                 <h4 id ="league-name"> </h4>
-                <h5 id ="league-standings"></h5> 
                 <h4 id ="league-country"></h4>
+                <h5 id ="league-standings">
+                    <table>
+                    <ul id = "team-1"></ul>
+                    <ul id = "team-2"></ul>
+                    <ul id = "team-3"></ul>
+                    <ul id = "team-4"></ul>
+                    <ul id = "team-5"></ul>
+                    <ul id = "team-6"></ul>
+                    <ul id = "team-7"></ul>
+                    <ul id = "team-8"></ul>
+                    <ul id = "team-9"></ul>
+                    <ul id = "team-10"></ul>
+                    <ul id = "team-11"></ul>
+                    <ul id = "team-12"></ul>
+                    <ul id = "team-13"></ul>
+                    <ul id = "team-14"></ul>
+                    </table>
+                </h5>
+                    <!-- <li id = "team-1">
+                        
+                    </li>
+                    <li>
+                        <p id = "team-2"> </p>
+                    </li>
+                    <li>
+                        <p id = "team-3"> </p>
+                    </li>
+                    <li>
+                        <p id = "team-4"> </p>
+                    </li>
+                    <li>
+                        <p id = "team-5"> </p>
+                    </li>
+                    <li>
+                        <p id = "team-6"> </p>
+                    </li>
+                    <li>
+                        <p id = "team-7"> </p>
+                    </li>
+                    <li>
+                        <p id = "team-8"> </p>
+                    </li>
+                    <li>
+                        <p id = "team-9"> </p>
+                    </li>
+                    <li>
+                        <p id = "team-10"> </p>
+                    </li>
+                    <li>
+                        <p id = "team-11"> </p>
+                    </li>
+                    <li>
+                        <p id = "team-12"> </p>
+                    </li>
+                    <li>
+                        <p id = "team-13"> </p>
+                    </li>
+                    <li>
+                        <p id = "team-14"> </p>
+                    </li>
+                    <li>
+                        <p id = "team-15"> </p>
+                    </li>
+                    <li>
+                        <p id = "team-16"> </p>
+                    </li>
+                    <li>
+                        <p id = "team-17"> </p>
+                    </li>
+                    <li>
+                        <p id = "team-18"> </p>
+                    </li>
+                    <li>
+                        <p id = "team-19"> </p>
+                    </li>
+                    <li>
+                        <p id = "team-20"> </p>
+                    </li> -->
+
+
 
             </div>
-           <h3>Add A Comment</h3>
-           <form id="create-task-form" action="#" method="post">
-            <label for="new-task-description">Comment:</label>
-            <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
-            <input type="submit" value="Add to the Community Board">
-          </form>
+            <!-- <audio controls>
+                <source src="tomp3.cc - Glory Glory Man Utd.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio> -->
+           <!-- <h3>Add A Comment</h3> -->
+           <h2>Community Board</h2>
+           <form id="comment-form" class="comment-form">
+
+            <ul id="comment_new">
+                <li> I love the french league!</li>
+                <li>Soccer is super boring</li>
+                <li>hey</li>
+            </ul>
+           <input
+             class="comment-input"
+             type="text"
+             name="comment"
+             id="comment"
+             placeholder="Add a comment..."
+             
+           />
+           <button class="comment-button" type="submit">Send 'er</button>
+         </form>
 
           <div id="list">
-            <h2>Community Board</h2>
-            <ul id="comment">
-            </ul>
+            <!-- <h2>Community Board</h2> -->
+
           </div>
+          <button class="accordion">Fun Fact #1</button>
+<div class="panel">
+  <p>Queen Elizabeth II would dress in disguise and participate 
+    frequently in soccer matches near Buckingham Palace in her 
+    teenage years in the late 1930s and early ‘40s.
+</p>
+</div>
+
+<button class="accordion">Fun Fact #2</button>
+<div class="panel">
+  <p>Up until 1991, soccer was illegal in Mississippi.</p>
+</div>
+
+<button class="accordion">Fun Fact #3</button>
+<div class="panel">
+  <p>The very first American professional soccer league called the 
+    USSA played from 1919 to 1921. 
+     For every goal scored the players earned 35-cents.</p>
+</div>
+
         </section>
         </div>
     </body>
