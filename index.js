@@ -26,7 +26,7 @@ fetch("http://localhost:3000/leagues")
     //Our wishlist for the code
     addLeagues(leagueData)
     setLeague(leagueData)
-    displayStandings(leagueData)
+    // displayStandings(leagueData)
     addComment()
     mouseOver()
     mouseOut()
@@ -37,23 +37,28 @@ fetch("http://localhost:3000/leagues")
 })
 function addLeagues(leagueData) {
     leagueData.forEach(league => {
-        let leagueItem = document.createElement("span");
+        let leagueItem = document.createElement("li");
         leagueItem.textContent = league.name;
         leagueList.appendChild(leagueItem);
         leagueItem.addEventListener("click", () => {
+            
+            for(let i = 1; i <= 20; i++) {
+                let teamItems = document.createElement("li");
+                let team = "team" + i
+                console.log(league[team])   
+                teamItems.textContent = league[team];
+                leagueList.appendChild(teamItems);
+                
+            }
             setLeague(league)
         })
+        
     })     
 //adding a mouseover event to change from home to away colors for the logo
 
 }
 // function displayStandings(leagueData) {
 //     leagueData.forEach(team => {
-//         for(let i = 0; i < 20; i++) {
-//             let newStandings = document.createElement("li");
-//             newStandings.textContent = team.team[i]
-//             leagueStandings.appendChild(newStandings);
-//         }
         
 //         // newStandings.addEventListener("click", () => {
 //         //     setLeague(team)

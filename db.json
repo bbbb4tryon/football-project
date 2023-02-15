@@ -32,9 +32,27 @@
             "country": "Spain",   
            "name": "La Liga",
            "leagueLogo":"https://a.espncdn.com/i/leaguelogos/soccer/500/15.png",
-           "teamStandings": [
-            "1st: Barcelona, 2nd: Real Madrid, 3rd: Real Sociedad, 4th: Atletico Madrid, 5th: Rayo Vallecano, 6th: Villareal, 7th: Real Betis, 8th Athletic Club, 9th: Osasuna, 10th: Mallorca, 11th: Girona, 12th: Celta Vigo, 13th: Valladolid, 14th: Almeria, 15th: Espanyol, 16th: Sevilla, 17th: Valencia, 18th: Cadiz, 19th: Getafe, 20th: Elche"
-             ]
+           "promoVideo": "https://www.youtube.com/watch?v=rMZVhL8obAkautoplay=1",
+            "team1": "1st Barcelona",
+            "team2": "2nd Real Madrid",
+            "team3": "3rd Real Sociedad",
+            "team4": "4th Atletico Madrid",
+            "team5": "5th Rayo Vallecano",
+            "team6": "6th Villareal",
+            "team7": "7th Real Betis",
+            "team8": "8th Athletic Club",
+            "team9": "9th Osasuna",
+            "team10": "10th Mallorca",
+            "team11": "11th Girona",
+            "team12": "12th Celta Vigo",
+            "team13": "13th Valladolid",
+            "team14": "14th Almeria",
+            "team15": "15th Espanyol",
+            "team16": "16th Sevilla",
+            "team17": "17th Valencia",
+            "team18": "18th Cadiz",
+            "team19": "19th Getafe",
+            "team20": "20th Elche"    
     }
     ]
 }

@@ -47,7 +47,7 @@ li:hover {
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    text-align: center;
+    text-align: right;
     border: none;
     outline: none;
     transition: 0.4s;
@@ -65,4 +65,4 @@ li:hover {
     display: none;
     overflow: hidden;
   }
-  
+  /* #league-details  */
