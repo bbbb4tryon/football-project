@@ -27,6 +27,7 @@ fetch("http://localhost:3000/leagues")
     //Our wishlist for the code
     addLeagues(leagueData)
     setLeague(leagueData)
+
     // displayStandings(leagueData)
     addComment()
     mouseOver()
@@ -35,11 +36,13 @@ fetch("http://localhost:3000/leagues")
     // displayLeagueStandings()
     //donationForm()
     //randomizeButton()
+
 })
 function addLeagues(leagueData) {
     leagueData.forEach(league => {
         let leagueItem = document.createElement("li");
         leagueItem.textContent = league.name;
+
         teamLeagueList.append(leagueItem);
         leagueItem.addEventListener("click", () => {
             
@@ -51,7 +54,11 @@ function addLeagues(leagueData) {
                 leagueList.append(teamItems);
                 
             }
+
             setLeague(league)
+            
+
+
         })
         
     })     
@@ -75,8 +82,8 @@ function setLeague(nextLeague) {
  leagueName.textContent = nextLeague.name;
  leagueCountry.textContent = nextLeague.country;
  leagueImage.src = nextLeague.leagueLogo;
- leagueStandings.textContent = nextLeague.teamStandings;
 
+ leagueStandings.textContent = nextLeague.teamStandings;
 
 }
 function addComment() {

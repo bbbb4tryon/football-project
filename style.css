@@ -22,6 +22,7 @@ li:hover {
     color: red;
     cursor: pointer;
 }
+
 #league-name{
     text-align: right;
 }
@@ -66,3 +67,4 @@ li:hover {
     overflow: hidden;
   }
   /* #league-details  */
+
