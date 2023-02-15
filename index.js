@@ -5,7 +5,18 @@ let leagueList = document.querySelector("#individual-leagues");
 let leagueImage = document.querySelector("#league-logo");
 let leagueName = document.querySelector("#league-name");
 let leagueCountry = document.querySelector("#league-country");
-let leagueStandings = document.querySelector("#league-name");
+let leagueStandings = document.querySelector("#league-standings");
+let teamLeagueList = document.querySelector("#individual-teams");
+let firstPlace = document.querySelector("#team-1");
+let secondPlace = document.querySelector("#team-2");
+let thirdPlace = document.querySelector("#team-3");
+let fourthPlace = document.querySelector("#team-4");
+let fifthPlace = document.querySelector("#team-5");
+let sixthPlace = document.querySelector("#team-6");
+let seventhPlace = document.querySelector("#team-7");
+let eighthPlace = document.querySelector("#team-8");
+let ninthPlace = document.querySelector("#team-9");
+let tenthPlace = document.querySelector("#team-10");
 // let leaguePromo = document.querySelector("#league-
 
 
@@ -16,34 +27,53 @@ fetch("http://localhost:3000/leagues")
     //Our wishlist for the code
     addLeagues(leagueData)
     setLeague(leagueData)
+
+    // displayStandings(leagueData)
+    addComment()
+    mouseOver()
+    mouseOut()
+    
+    // displayLeagueStandings()
+    //donationForm()
+    //randomizeButton()
+
 })
 function addLeagues(leagueData) {
     leagueData.forEach(league => {
-        let leagueItem = document.createElement("ol");
+        let leagueItem = document.createElement("li");
         leagueItem.textContent = league.name;
-        leagueList.appendChild(leagueItem);
 
-        leagueList.addEventListener("click", () => {
+        teamLeagueList.append(leagueItem);
+        leagueItem.addEventListener("click", () => {
+            
+            for(let i = 1; i <= 20; i++) {
+                let teamItems = document.createElement("li");
+                let team = "team" + i
+                console.log(league[team])   
+                teamItems.textContent = league[team];
+                leagueList.append(teamItems);
+                
+            }
+
             setLeague(league)
             
 
 
         })
+        
     })     
 //adding a mouseover event to change from home to away colors for the logo
 
 }
-function displayStandings(leagueData) {
-    leagueStandings.forEach(team => {
-        let newStandings = document.createElement("ol");
-        newStandings.textContent = team.teamStandings;
-        leagueStandings.appendChild(newStandings);
-        // newStandings.addEventListener("click", () => {
-        //     setLeague(team)
-        // })
+// function displayStandings(leagueData) {
+//     leagueData.forEach(team => {
+        
+//         // newStandings.addEventListener("click", () => {
+//         //     setLeague(team)
+//         // })
     
-    })
-}
+//     })
+// }
 
 
 function setLeague(nextLeague) {
@@ -52,8 +82,9 @@ function setLeague(nextLeague) {
  leagueName.textContent = nextLeague.name;
  leagueCountry.textContent = nextLeague.country;
  leagueImage.src = nextLeague.leagueLogo;
-leagueStandings.textContent = nextLeague.standings;
- 
+
+ leagueStandings.textContent = nextLeague.teamStandings;
+
 }
 function addComment() {
     let newComment = document.querySelector("#comment-form")
