@@ -65,10 +65,4 @@ li:hover {
     display: none;
     overflow: hidden;
   }
-  #individual-leagues 
-  li:hover {
-    color: red;
-    cursor: pointer;
-    text-align: right;
-
-  }
+  /* #league-details  */
