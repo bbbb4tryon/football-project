@@ -80,18 +80,6 @@ fetch("http://localhost:3000/leagues")
    
 
 })
-
-function displayInformation(leagueData) {
-  let displayLeagueInformation = document.querySelector("#individual-leagues");  
-  leagueData.forEach(league => {
-    let newFootballLeague = document.createElement("li");
-    newFootballLeague.textContent = league.name;
-    displayLeagueInformation.append(newFootballLeague);
-
-    newFootballLeague.addEventListener("click", () => {
-        setLeague(league)
-    })
-  })
 }
 
 
