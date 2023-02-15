@@ -5,6 +5,7 @@ let leagueItem = document.createElement("li");
 
 
 let currentLeague;
+let leagueFlag = document.querySelector("#league-flag");
 let leagueList = document.querySelector("#individual-leagues");
 let leagueImage = document.querySelector("#league-logo");
 let leagueName = document.querySelector("#league-name");
@@ -29,6 +30,7 @@ let leagueStandings17 = document.querySelector("#team-17");
 let leagueStandings18 = document.querySelector("#team-18");
 let leagueStandings19 = document.querySelector("#team-19");
 let leagueStandings20 = document.querySelector("#team-20");
+let oldComments = document.querySelector("#comment_new")
 
 
 
@@ -39,28 +41,7 @@ let leagueStandings20 = document.querySelector("#team-20");
 
 
 
-let teamLeagueList = document.querySelector("#individual-teams");
-let mouseOver = document.getElementById("title");
-let mouseOut = document.getElementById("title");
-let firstPlace = document.querySelector("#team-1");
-let secondPlace = document.querySelector("#team-2");
-let thirdPlace = document.querySelector("#team-3");
-let fourthPlace = document.querySelector("#team-4");
-let fifthPlace = document.querySelector("#team-5");
-let sixthPlace = document.querySelector("#team-6");
-let seventhPlace = document.querySelector("#team-7");
-let eighthPlace = document.querySelector("#team-8");
-let ninthPlace = document.querySelector("#team-9");
-let tenthPlace = document.querySelector("#team-10");
-// let leaguePromo = document.querySelector("#league-
 
-// for(let i = 1; i <= 20; i++) {
-//     let team = "team" + i
-//     let teamItems = document.createElement("li");
-//     // console.log(league[team])   
-//     teamItems.textContent = obj[team];
-//     leagueListNew.append(teamItems);
-// }
 
 
 fetch("http://localhost:3000/leagues")
@@ -73,8 +54,8 @@ fetch("http://localhost:3000/leagues")
     displayInformation(leagueData);
     addComment()
     setLeague(leagueData)
-    // mouseOverFunction()
-    // mouseOutFunction()
+    mouseOverFunction()
+    mouseOutFunction()
     
     // displayLeagueStandings()
    
@@ -102,6 +83,7 @@ function setLeague(nextLeague) {
  leagueName.textContent = nextLeague.name;
  leagueCountry.textContent = nextLeague.country;
  leagueImage.src = nextLeague.leagueLogo;
+ leagueFlag.src = nextLeague.flag;
  leagueStandings1.textContent = nextLeague.team1;
  leagueStandings2.textContent = nextLeague.team2;
  leagueStandings3.textContent = nextLeague.team3;
@@ -135,7 +117,7 @@ function addComment() {
         }
         const newSoccerComment = document.createElement("li");
         newSoccerComment.textContent = newCommentAdded.content;
-        newComment.appendChild(newSoccerComment);
+        oldComments.appendChild(newSoccerComment);
 
         addLeagues(newCommentAdded)
     })

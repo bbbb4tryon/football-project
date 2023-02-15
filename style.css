@@ -16,25 +16,45 @@ body {
      */
    
 }
-#individual-league,
+#individual-leagues {
+    border-style:solid;
+    margin: 0 auto;
+    position: relative;
+    right: 35vw;
+    width: 15vw;
+}
+
 #league-logo,
 li:hover {
     color: red;
     cursor: pointer;
 }
 
-#league-name{
-    text-align: right;
+h3 {
+    color: black;
+    font-family: monospace;
+    position: absolute;
+    top: 18vh;
+    left: 75vw;
 }
-#league-country,
-#league-name,
+
+
+#league-country {
+    position: absolute;
+    top: 24vh;
+    left: 65vw;
+}
+#league-name {
+    position: absolute;
+    top: 20vh;
+    left: 65vw;
+}
 #league-logo {
     width: 100px;
     height: 100px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
+    position: absolute;
+    top: 20vh;
+    left: 50vw;
 }
 #league-information {
     margin-left: auto;
@@ -48,7 +68,7 @@ li:hover {
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    text-align: right;
+    text-align: center;
     border: none;
     outline: none;
     transition: 0.4s;
@@ -66,7 +86,20 @@ li:hover {
     display: none;
     overflow: hidden;
   }
- #listOfTeams {
-    padding: 5000;
+ h5{
+    color: purple;
+    text-align: square;
+    padding-right: 100px;
+    position: absolute;
+    top: 19vh;
+    left: 75vw;
+    font-size: 1.2em;
+    font-weight: bold;
+ }
+ #league-flag {
+    position: absolute;
+    top: 15vh;
+    left: 75vw;
+
  }
 
