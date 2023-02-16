@@ -57,6 +57,7 @@ fetch("http://localhost:3000/leagues")
         setLeague(leagueData[0])
         mouseOverFunction()
         mouseOutFunction()
+
         // promoVideo(leagueData)
 
         // displayLeagueStandings()
@@ -134,13 +135,15 @@ function addComment() {
 }
 function mouseOverFunction() {
     mouseOver.addEventListener("mouseover", () => {
-        document.getElementById("pick-a-league").style.color = "red"
+        // document.getElementById("pick-a-league").style.color = "red"
+        document.querySelector("#title").style.background = "red"
+
 
     })
 }
 function mouseOutFunction() {
     mouseOut.addEventListener("mouseout", () => {
-        document.getElementById("pick-a-league").style.color === "black"
+        document.getElementById("title").style.background = "White"
     })
 }
 // function displayLeagueStandings (leagueData) {
