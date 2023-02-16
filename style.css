@@ -1,11 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-h1 {
+.class {
     font-family: 'Righteous', cursive;
     color: black;
-
+    background-color: aliceblue;
+    outline-style: black;
     text-align: center;
+    border-radius: 5px;
+    height: 50px;
+    width: flex;
+    float: center;
 }
+
+/* h1 {
+    font-family: 'Righteous', cursive;
+    color: black;
+    background-color: aliceblue;
+    outline-style: black;
+    text-align: center;
+    border-radius: 5px;
+} */
 
 body {
     text-align: left;
@@ -15,7 +29,7 @@ body {
 
 #league.card {
     border: 2px solid black;
-    max-width: 160px;
+    max-width: 175px;
     background-color: whitesmoke;
     padding: 5px;
     margin: 10px;
@@ -25,7 +39,7 @@ body {
 
 #standings.card {
     border: 2px solid black;
-    max-width: 2225px;
+    max-width: 250px;
     background-color: whitesmoke;
     padding: 5px;
     margin: 10px;
@@ -62,28 +76,41 @@ body {
 li:hover {
     color: red;
     cursor: pointer;
+    background-color: aliceblue;
+    border: solid black thin;
 }
 
 h3 {
+    font-size: x-large;
+    background-color: aliceblue;
+    border: black solid thin;
+    border-radius: 5px;
     color: black;
 
     position: absolute;
-    top: 18vh;
-    left: 75vw;
+    top: 15vh;
+    left: 76vw;
 }
 
 
 #league-country {
+    font-size: xx-large;
     position: absolute;
-    top: 15vh;
-    left: 50vw;
+    top: 10vh;
+    left: 25vw;
+    background-color: aliceblue;
+    border: black solid thin;
+    border-radius: 6px;
 }
 
 #league-name {
-    font-size: larger;
+    font-size: xx-large;
     position: absolute;
-    top: 12vh;
-    left: 50vw;
+    top: 15vh;
+    left: 25vw;
+    background-color: aliceblue;
+    border: solid black thin;
+    border-radius: 6px;
 }
 
 #league-logo {
@@ -92,6 +119,7 @@ h3 {
     position: absolute;
     top: 20vh;
     left: 50vw;
+    border-radius: 10px;
 }
 
 #league-information {
@@ -131,7 +159,8 @@ h5 {
     left: 75vw;
     height: 10%;
     width: 10%;
-    border: black solid transparent;
+    border: black solid thin;
+    border-radius: 10px;
 
 
 }
@@ -149,3 +178,13 @@ h5 {
     min-height: 100%;
     z-index: -1;
 }
+
+/* #league-info {
+    border: 2px solid black;
+    max-width: 225px;
+    background-color: whitesmoke;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer
+} */

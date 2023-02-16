@@ -13,13 +13,15 @@
 
 <body>
     <header>
-        <h1 id='title'>Football Leagues Around The World</h1>
+        <div class="class">
+            <h1 id='title'>Football Leagues Around The World</h1>
+        </div>
+
         <div id="random-background">
             <img class="soccer" src="https://source.unsplash.com/random/?soccer stadium" alt="">
-        </div>
-        <!-- add an image here for the page -->
+            <!-- add an image here for the page -->
 
-        <!-- <script>
+            <!-- <script>
             document.getElementById("title").onmouseover = function() {mouseOver()};
             document.getElementById("title").onmouseout = function() {mouseOut()};
             
@@ -36,10 +38,12 @@
     <div id="container">
         <section id="leagues">
             <div id="league" class="card">
-                <h2>Pick A League!</h2>
+                <h2 id="pick-a-league">Pick A League!</h2>
             </div>
 
-
+            <!-- <iframe id="promo-video" width="420" height="345"
+                src="https://www.youtube.com/v/v=tjBrbeH2XZw?autoplay=1&mute=1">
+            </iframe> -->
 
             <div id="individual-leagues">
                 <!-- add the leagues here -->
@@ -49,14 +53,17 @@
         </section>
         <section id="league-information">
 
-            <img id="league-logo" />
+
+            <div id="league-info" class="card">
+                <img id="league-logo" />
+                <h4 id="league-name"> </h4>
+                <h4 id="league-country"></h4>
+
+            </div>
             <img id="league-flag" />
-            <iframe id="promo-video" src="" frameborder="0"></iframe>
 
 
             <div id="league-details">
-                <h4 id="league-name"> </h4>
-                <h4 id="league-country"></h4>
                 <h3> Current Standings</h3>
                 <h5 id="league-standings">
                     <div id="standings" class="card">
@@ -91,9 +98,9 @@
                 Your browser does not support the audio element.
             </audio> -->
             <!-- <h3>Add A Comment</h3> -->
-            <h2>Community Board</h2>
             <div id="comment-card" class="card">
                 <form id="comment-form" class="comment-form">
+                    <h2>Community Board</h2>
 
                     <ul id="comment_new">
                         <li> I love to watch the premier League</li>

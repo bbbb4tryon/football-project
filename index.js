@@ -57,7 +57,7 @@ fetch("http://localhost:3000/leagues")
         setLeague(leagueData[0])
         mouseOverFunction()
         mouseOutFunction()
-        promoVideo(leagueData)
+        // promoVideo(leagueData)
 
         // displayLeagueStandings()
 
@@ -109,14 +109,14 @@ function setLeague(nextLeague) {
 
 
 }
-function promoVideo(leagueData) {
-    let promoVideoSoccer = document.querySelector("iframe")
-    leagueData.forEach(video => {
-        promoVideoSoccer.promoVideo = video.src
-        promoVideoSoccer.append(promoVideoSoccer.promoVideo)
+// function promoVideo(leagueData) {
+// let promoVideoSoccer = document.querySelector("iframe")
+// leagueData.forEach(video => {
+//     promoVideoSoccer.promoVideo = video.src
+//     promoVideoSoccer.append(promoVideoSoccer.promoVideo)
 
-    })
-}
+// })
+// }
 function addComment() {
     let newComment = document.querySelector("#comment-form")
     newComment.addEventListener("submit", (event) => {
@@ -134,14 +134,13 @@ function addComment() {
 }
 function mouseOverFunction() {
     mouseOver.addEventListener("mouseover", () => {
-        document.getElementById("title").style.color = "red"
-        let playAnthem = document.getElementById("controls")
+        document.getElementById("pick-a-league").style.color = "red"
 
     })
 }
 function mouseOutFunction() {
     mouseOut.addEventListener("mouseout", () => {
-        document.getElementById("title").style.color = "black"
+        document.getElementById("pick-a-league").style.color === "black"
     })
 }
 // function displayLeagueStandings (leagueData) {
@@ -149,23 +148,23 @@ function mouseOutFunction() {
 
 //     console.log(leagues[teamStandings].teamStandings)
 // }
-var acc = document.getElementsByClassName("accordion");
-var i;
+// var acc = document.getElementsByClassName("accordion");
+// var i;
 
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-        /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
-        this.classList.toggle("active");
+// for (i = 0; i < acc.length; i++) {
+//     acc[i].addEventListener("click", function () {
+//         /* Toggle between adding and removing the "active" class,
+//         to highlight the button that controls the panel */
+//         this.classList.toggle("active");
 
-        /* Toggle between hiding and showing the active panel */
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-    });
-}
+//         /* Toggle between hiding and showing the active panel */
+//         var panel = this.nextElementSibling;
+//         if (panel.style.display === "block") {
+//             panel.style.display = "none";
+//         } else {
+//             panel.style.display = "block";
+//         }
+//     });
+// }
 
 
