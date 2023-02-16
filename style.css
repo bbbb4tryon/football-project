@@ -1,27 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 h1 {
+    font-family: 'Righteous', cursive;
     color: black;
-    font-family: monospace;
+
     text-align: center;
 }
+
 body {
     text-align: left;
-    font-family: monospace;
+    font-family: 'Righteous', cursive;
     font-weight: normal;
-    background-color: bisque;
-    /* background-image: url('https://cdnuploads.aa.com.tr/uploads/Contents/2018/11/01/thumbs_b_c_b5d8d7076b8ba4773b8e3eb87428a801.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    image-rendering: -webkit-optimize-contrast;
-    background-size: cover;
-     */
-   
 }
+
+#league.card {
+    border: 2px solid black;
+    max-width: 160px;
+    background-color: whitesmoke;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#standings.card {
+    border: 2px solid black;
+    max-width: 2225px;
+    background-color: whitesmoke;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#comment-card.card {
+    border: 2px solid black;
+    max-width: 225px;
+    background-color: whitesmoke;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer
+}
+
 #individual-leagues {
-    border-style:solid;
     margin: 0 auto;
     position: relative;
-    right: 35vw;
+    right: 41vw;
     width: 15vw;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+#individual-leagues article {
+    padding: 5px;
+    border: 2px;
 }
 
 #league-logo,
@@ -32,7 +66,7 @@ li:hover {
 
 h3 {
     color: black;
-    font-family: monospace;
+
     position: absolute;
     top: 18vh;
     left: 75vw;
@@ -41,53 +75,47 @@ h3 {
 
 #league-country {
     position: absolute;
-    top: 24vh;
-    left: 65vw;
+    top: 15vh;
+    left: 50vw;
 }
+
 #league-name {
+    font-size: larger;
     position: absolute;
-    top: 20vh;
-    left: 65vw;
+    top: 12vh;
+    left: 50vw;
 }
+
 #league-logo {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     position: absolute;
     top: 20vh;
     left: 50vw;
 }
+
 #league-information {
+    top: 50vh;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
 }
+
 /* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-    background-color: bisque;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: center;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
-    background-color: #ccc;
-  }
-  
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
     padding: 0 18px;
-    background-color: bisque;
     display: none;
     overflow: hidden;
-  }
- h5{
-    color: purple;
+}
+
+h5 {
+    color: black;
     text-align: square;
     padding-right: 100px;
     position: absolute;
@@ -95,11 +123,29 @@ h3 {
     left: 75vw;
     font-size: 1.2em;
     font-weight: bold;
- }
- #league-flag {
+}
+
+#league-flag {
     position: absolute;
-    top: 15vh;
+    top: 3vh;
     left: 75vw;
+    height: 10%;
+    width: 10%;
+    border: black solid transparent;
 
- }
 
+}
+
+#comment-form {
+    top: 73vh;
+}
+
+.soccer {
+    position: fixed;
+    opacity: 0.9;
+    top: 0;
+    left: o;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}

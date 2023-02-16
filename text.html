@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,17 @@
     <script defer src="index.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Football Leagues Around The World</title>
-    
+
 </head>
+
 <body>
     <header>
-        <h1 id = 'title'>Football Leagues Around The World</h1> 
+        <h1 id='title'>Football Leagues Around The World</h1>
+        <div id="random-background">
+            <img class="soccer" src="https://source.unsplash.com/random/?soccer stadium" alt="">
+        </div>
         <!-- add an image here for the page -->
-        
+
         <!-- <script>
             document.getElementById("title").onmouseover = function() {mouseOver()};
             document.getElementById("title").onmouseout = function() {mouseOut()};
@@ -28,84 +33,83 @@
             }
             </script> -->
     </header>
-    <div id ="container">
-        <section id = "leagues">
-            <h2>Pick A League!</h2>
-            <h3> Current Standings</h3>
-        
+    <div id="container">
+        <section id="leagues">
+            <div id="league" class="card">
+                <h2>Pick A League!</h2>
+            </div>
 
-            
-            <div id ="individual-leagues">
+
+
+            <div id="individual-leagues">
                 <!-- add the leagues here -->
-                <div id = "individual-teams"></div>
+                <div id="individual-teams"></div>
                 <!-- team lists standings will populate here -->
             </div>
         </section>
-        <section id = "league-information">
+        <section id="league-information">
 
-            <img id = "league-logo"/> 
-            <img id = "league-flag"/>
-            
+            <img id="league-logo" />
+            <img id="league-flag" />
+            <iframe id="promo-video" src="" frameborder="0"></iframe>
 
-            <div id = "league-details">
-                <h4 id ="league-name"> </h4>
-                <h4 id ="league-country"></h4>
-                <h5 id ="league-standings">
-                    <table>
-                    <ul id = "team-1"></ul>
-                    <ul id = "team-2"></ul>
-                    <ul id = "team-3"></ul>
-                    <ul id = "team-4"></ul>
-                    <ul id = "team-5"></ul>
-                    <ul id = "team-6"></ul>
-                    <ul id = "team-7"></ul>
-                    <ul id = "team-8"></ul>
-                    <ul id = "team-9"></ul>
-                    <ul id = "team-10"></ul>
-                    <ul id = "team-11"></ul>
-                    <ul id = "team-12"></ul>
-                    <ul id = "team-13"></ul>
-                    <ul id = "team-14"></ul>
-                    <ul id = "team-15"></ul>
-                    <ul id = "team-16"></ul>
-                    <ul id = "team-17"></ul>
-                    <ul id = "team-18"></ul>
-                    <ul id = "team-19"></ul>
-                    <ul id = "team-20"></ul>
+
+            <div id="league-details">
+                <h4 id="league-name"> </h4>
+                <h4 id="league-country"></h4>
+                <h3> Current Standings</h3>
+                <h5 id="league-standings">
+                    <div id="standings" class="card">
+                        <article id="team-1"></article>
+                        <article id="team-2"></article>
+                        <article id="team-3"></article>
+                        <article id="team-4"></article>
+                        <article id="team-5"></article>
+                        <article id="team-6"></article>
+                        <article id="team-7"></article>
+                        <article id="team-8"></article>
+                        <article id="team-9"></article>
+                        <article id="team-10"></article>
+                        <article id="team-11"></article>
+                        <article id="team-12"></article>
+                        <article id="team-13"></article>
+                        <article id="team-14"></article>
+                        <article id="team-15"></article>
+                        <article id="team-16"></article>
+                        <article id="team-17"></article>
+                        <article id="team-18"></article>
+                        <article id="team-19"></article>
+                        <article id="team-20"></article>
+                    </div>
                     </table>
                 </h5>
-                    
+
 
             </div>
-            <audio id = "controls">
+            <!-- <audio id="controls">
                 <source src="tomp3.cc - Glory Glory Man Utd.mp3" type="audio/mpeg">
-              Your browser does not support the audio element.
-              </audio>
-           <!-- <h3>Add A Comment</h3> -->
-           <h2>Community Board</h2>
-           <form id="comment-form" class="comment-form">
+                Your browser does not support the audio element.
+            </audio> -->
+            <!-- <h3>Add A Comment</h3> -->
+            <h2>Community Board</h2>
+            <div id="comment-card" class="card">
+                <form id="comment-form" class="comment-form">
 
-            <ul id="comment_new">
-                <li> I love the french league!</li>
-                <li>Soccer is super boring</li>
-                <li>hey</li>
-            </ul>
-           <input
-             class="comment-input"
-             type="text"
-             name="comment"
-             id="comment"
-             placeholder="Add a comment..."
-             
-           />
-           <button class="comment-button" type="submit">Send 'er</button>
-         </form>
+                    <ul id="comment_new">
+                        <li> I love to watch the premier League</li>
+                        <li>How has PSG not won the Champions league</li>
+                        <li>It's called soccer, not football</li>
+                    </ul>
+                    <input class="comment-input" type="text" name="comment" id="comment"
+                        placeholder="Add a comment..." />
+                    <button class="comment-button" type="submit">Send 'er</button>
+                </form>
+            </div>
+            <div id="list">
+                <!-- <h2>Community Board</h2> -->
 
-          <div id="list">
-            <!-- <h2>Community Board</h2> -->
-
-          </div>
-          <button class="accordion">Fun Fact #1</button>
+            </div>
+            <!-- <button class="accordion">Fun Fact #1</button>
 <div class="panel">
   <p>Queen Elizabeth II would dress in disguise and participate 
     frequently in soccer matches near Buckingham Palace in her 
@@ -123,11 +127,11 @@
   <p>The very first American professional soccer league called the 
     USSA played from 1919 to 1921. 
      For every goal scored the players earned 35-cents.</p>
-</div>
+</div> -->
 
         </section>
 
-        </div>
+        <article class="jonah"></article>
 
 
 
@@ -136,14 +140,15 @@
 
 
 
-    <!-- <div class = "container">
+
+        <!-- <div class = "container">
         <ul id = "leagues">
-            add all the leagues here
-            <ul id = "leagues-list">
+          add all the leagues here -->
+        <!-- <ul id = "leagues-list">
                 <li id = "leagues__standings">
-                    individual league standings will populate within this section
+                     individual league standings will populate within this section
                     
-                    ideally want to add a youtube video that can be played to display some highlights for the league after a specific league is clicked
+                    ideally want to add a youtube video that can be played to display some highlights for the league after a specific league is clicked 
                     <div id = "leagues__video">
                     </div>
                 </li>
@@ -151,18 +156,16 @@
             </ul>
         </nav>
         <section id = "league-details">
-            <img id="league-logo" src=""/>
+             <img id="league-logo" src=""/> 
             <div> 
                <h2 id = "league-name"></h2> 
-               <h3 id = "league-country"></h3>
-                <form id = "league-comments" type = "text">
-                <button name = "comment-btn" type = "submit">Add A Commnent Here!</button>
-                <input id = "comment-input" type = "text"/> 
-                </form> -->
+               <h3 id = "league-country"></h3> -->
 
-            <!-- </div> -->
+
+        <!-- </div> -->
 
         <!-- </section>
     </div>   -->
-    </body>
+</body>
+
 </html>
