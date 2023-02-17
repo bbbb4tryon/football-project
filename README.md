@@ -1,7 +1,7 @@
 
-Football Leagues Around the World is a site dedicated to unmatched, to the nanosecond updates for footie*. Don't feel like a pendulous fool if the moment before you click, you feel drained and limpid - your life is about to change for the better.  If you think "football" is the NFL, don't. There is much more corruption, nepotism and arrogance than in America - and that's just from the software engineers.
+Football Leagues Around the World is a site dedicated to unmatched, to-the-second, updates for footie*. Don't feel like a pendulous fool if the moment before you click, you feel drained and limp - your life is about to change for the better.  If you think "football" is the NFL, don't. There is much more corruption, nepotism and arrogance than in America - and that's just from the software engineers, Jonah Peck and Ben Tryon.
 
-Here at FLAW, you'll be educated on how to dispel that awkward, empty feeling when the moment arrives. You'll feel confident and be effective in your performance - whether at the pub, the stadium, camping with friends or even a caravan of strangers. Your friends will love what you gained from FLAW and all for free - no 30-day trial, no BOGO, nothing to stop you from gushing turgid verses of achingly earnest footie stats. Freedom is discussing when Arsenal lost the top spot to City and how GZ City compares with the others of the Chinese Super League, all gained from regular visits and use.
+Here at FLAW, you'll be educated on how to dispel that awkward, empty feeling the comes just before that magic moment arrives. That click. That load. That FLAW. You'll feel confident and be effective in your performance - whether at the pub, the stadium, camping with friends or even a caravan of strangers. You can now talk the talk and chew the fat. Your friends will love what you gained from FLAW...and all for free - no 30-day trial, no keys, nothing to stop you from gushing achingly earnest footie stats. Freedom is discussing when Arsenal lost the top spot to City and how GZ City compares with the others of the Chinese Super League, all gained from regular visits and use.
 
 --What Platform Does FLAW work best on?--
 Most any - we've found Chrome and Youtube are the most reliable browsers/platforms.
@@ -24,7 +24,7 @@ kill -9 <PID>
 
 
 --A Place to go to Seek Help, if Applicable:--
-Contact the Rehab Clinics Group Free Helpline for Football Fans and Players (https://rehabclinicsgroup.com/addiction-help-for-football-fans/) or text HELP to 83222. There is no affiliation with FLAW and RCG.
+Contact the Rehab Clinics Group Free Helpline for Football Fans and Players (https://rehabclinicsgroup.com/addiction-help-for-football-fans/) or text HELP to 83222. There is no affiliation with FLAW and RCG. Otherwise, use Google.
 
 
 
