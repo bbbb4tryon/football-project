@@ -12,14 +12,14 @@
     float: center;
 }
 
-/* h1 {
+h1 {
     font-family: 'Righteous', cursive;
     color: black;
     background-color: aliceblue;
     outline-style: black;
     text-align: center;
     border-radius: 5px;
-} */
+}
 
 body {
     text-align: left;
@@ -179,15 +179,6 @@ h5 {
     z-index: -1;
 }
 
-/* #league-info {
-    border: 2px solid black;
-    max-width: 225px;
-    background-color: whitesmoke;
-    padding: 5px;
-    margin: 10px;
-    border-radius: 10px;
-    cursor: pointer
-} */
 
 .soccer-gif {
     display: flex;

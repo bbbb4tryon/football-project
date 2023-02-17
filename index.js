@@ -58,9 +58,6 @@ fetch("http://localhost:3000/leagues")
         mouseOverFunction()
         mouseOutFunction()
 
-        // promoVideo(leagueData)
-
-        // displayLeagueStandings()
 
 
     })
@@ -110,14 +107,7 @@ function setLeague(nextLeague) {
 
 
 }
-// function promoVideo(leagueData) {
-// let promoVideoSoccer = document.querySelector("iframe")
-// leagueData.forEach(video => {
-//     promoVideoSoccer.promoVideo = video.src
-//     promoVideoSoccer.append(promoVideoSoccer.promoVideo)
 
-// })
-// }
 function addComment() {
     let newComment = document.querySelector("#comment-form")
     newComment.addEventListener("submit", (event) => {
@@ -146,28 +136,6 @@ function mouseOutFunction() {
         document.getElementById("title").style.background = "White"
     })
 }
-// function displayLeagueStandings (leagueData) {
-//     for (const teamStandings in leagues)
 
-//     console.log(leagues[teamStandings].teamStandings)
-// }
-// var acc = document.getElementsByClassName("accordion");
-// var i;
-
-// for (i = 0; i < acc.length; i++) {
-//     acc[i].addEventListener("click", function () {
-//         /* Toggle between adding and removing the "active" class,
-//         to highlight the button that controls the panel */
-//         this.classList.toggle("active");
-
-//         /* Toggle between hiding and showing the active panel */
-//         var panel = this.nextElementSibling;
-//         if (panel.style.display === "block") {
-//             panel.style.display = "none";
-//         } else {
-//             panel.style.display = "block";
-//         }
-//     });
-// }
 
 
