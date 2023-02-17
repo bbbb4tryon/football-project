@@ -1,3 +1,4 @@
+//hello
 //code for use to get JS to show up on website
 let leagueItem = document.createElement("li");
 
